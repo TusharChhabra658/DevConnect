@@ -15,7 +15,7 @@ const checkObjectId = require('../../middleware/checkObjectId');
 
 router.post(
   '/',
-  [auth, [check('text', 'Text is Reuired').not().isEmpty()]],
+  [auth, [check('text', 'Text is Required').not().isEmpty()]],
   async (req, res) => {
     const errors = validationResult(req);
 
